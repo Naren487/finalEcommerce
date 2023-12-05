@@ -1,0 +1,19 @@
+{
+  "name": "ecom-ms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "cd ecommerce && npm start",
+    "backend": "cd server && npx nodemon@latest server.js",
+    "db": "cd server && json-server --watch db.json --port 2000",
+    "start":"concurrently \"npm run frontend\" \"npm run backend\" \"npm run db\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
