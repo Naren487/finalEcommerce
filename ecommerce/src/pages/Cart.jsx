@@ -46,7 +46,7 @@ const Cart = () => {
     const headers={
       "Content-Type":"application/json"
     }
-    const response=await fetch("https://server-neon-theta.vercel.app/:7000/api/create-checkout-session",{
+    const response=await fetch("https://server-neon-theta.vercel.app:7000/api/create-checkout-session",{
       method:"POST",
       headers:headers,
       body:JSON.stringify(body)
